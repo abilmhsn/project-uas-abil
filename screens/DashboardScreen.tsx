@@ -44,7 +44,7 @@ const products = [
     category: "shoes",
     price: 180,
     originalPrice: 220,
-    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/1.jpg",
+    image: "https://down-id.img.susercontent.com/file/sg-11134201-7reng-m2986ac1n9nnbe",
     rating: 4.8,
     isNew: true,
   },
@@ -54,7 +54,7 @@ const products = [
     category: "tshirt",
     price: 35,
     originalPrice: 45,
-    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/2.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZ_R9l_PNLb6V_aRuG6bKyeJRa1poss-GYg&s",
     rating: 4.5,
     isNew: false,
   },
@@ -64,7 +64,7 @@ const products = [
     category: "pants",
     price: 65,
     originalPrice: 80,
-    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/3.jpg",
+    image: "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/98/MTA-170624644/prodigo_footwear_prodigo_-_track_pants_pria_namo_i_celana_cargo_i_cargo_track_pants_i_celana_trackpants_full01_c7nkky7q.jpg",
     rating: 4.6,
     isNew: true,
   },
@@ -74,7 +74,7 @@ const products = [
     category: "jacket",
     price: 120,
     originalPrice: 150,
-    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/4.jpg",
+    image: "https://preloved.co.id/_ipx/f_webp,q_80,fit_cover,s_380x380/https://assets.preloved.co.id/products/330180/904c6988-6717-4905-b796-f05bd8357de2_thumbnail.jpg",
     rating: 4.7,
     isNew: false,
   },
@@ -84,7 +84,7 @@ const products = [
     category: "shoes",
     price: 100,
     originalPrice: 120,
-    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/5.jpg",
+    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/62f55933cd3c46c4a15cac7701278d75_9366/Stan_Smith_Shoes_Black_FX7523.jpg",
     rating: 4.9,
     isNew: false,
   },
@@ -94,7 +94,7 @@ const products = [
     category: "tshirt",
     price: 40,
     originalPrice: 50,
-    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/6.jpg",
+    image: "https://banditrunning.com/cdn/shop/files/Frame507_423d49c2-0291-4810-a8fd-da251afd4cc4_2000x.png?v=1739055234",
     rating: 4.4,
     isNew: true,
   },
@@ -104,7 +104,7 @@ const products = [
     category: "pants",
     price: 75,
     originalPrice: 90,
-    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/7.jpg",
+    image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/466662/sub/goods_466662_sub15_3x4.jpg?width=494",
     rating: 4.5,
     isNew: false,
   },
@@ -114,7 +114,7 @@ const products = [
     category: "jacket",
     price: 95,
     originalPrice: 110,
-    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/8.jpg",
+    image: "https://down-id.img.susercontent.com/file/id-11134207-23020-ti97iv4rfmnvb8",
     rating: 4.6,
     isNew: true,
   },
@@ -238,7 +238,7 @@ export default function DashboardScreen() {
 
   return (
     <>
-      <ScrollView style={tw`flex-1 bg-gray-50 pt-8`} showsVerticalScrollIndicator={false}>
+      <ScrollView style={tw`flex-1 bg-gray pt-8`} showsVerticalScrollIndicator={false}>
         {/* Header */}
         <View style={tw`bg-white px-6 pt-4 pb-6`}>
           <View style={tw`flex-row items-center justify-between mb-4`}>
@@ -503,6 +503,7 @@ export default function DashboardScreen() {
                 {/* Cart Summary */}
                 <View style={tw`p-6 border-t border-gray-100 bg-gray-50`}>
                   <View style={tw`flex-row justify-between items-center mb-2`}>
+                    {/* <Text style={tw`text-gray-600 text-base`}>Produk dipilih: {selectedProduct.name}</Text> */}
                     <Text style={tw`text-gray-600 text-base`}>Total Items:</Text>
                     <Text style={tw`text-gray-800 font-semibold text-base`}>{getTotalItems()}</Text>
                   </View>
@@ -510,7 +511,7 @@ export default function DashboardScreen() {
                     <Text style={tw`text-gray-800 font-bold text-lg`}>Total Amount:</Text>
                     <Text style={tw`text-black font-bold text-xl`}>${getTotalAmount()}</Text>
                   </View>
-                  <TouchableOpacity style={tw`bg-black rounded-xl py-4 items-center`}>
+                  <TouchableOpacity onPress={() => setCartModalVisible(false)} style={tw`bg-black rounded-xl py-4 items-center`}>
                     <Text style={tw`text-white font-bold text-lg`}>Continue Shopping</Text>
                   </TouchableOpacity>
                 </View>

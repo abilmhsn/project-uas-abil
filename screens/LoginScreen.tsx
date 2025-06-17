@@ -79,7 +79,7 @@ export default function LoginScreen() {
     <ScrollView style={tw`flex-1 bg-gray-50`} contentContainerStyle={tw`flex-grow justify-center p-6`}>
       <View style={tw`items-center mb-10`}>
         <Ionicons name="pricetags-outline" size={80} color="#3B82F6" style={tw`mb-4`} />
-        <Text style={tw`text-4xl font-extrabold text-gray-800`}>Thrift-Bill</Text>
+        <Text style={tw`text-4xl font-extrabold text-gray-800`}>Cabibul-Thrift</Text>
         <Text style={tw`text-lg text-gray-600`}>E-commerce Thrifting</Text>
       </View>
 
