@@ -10,6 +10,7 @@ import type { NativeStackNavigationProp } from "@react-navigation/native-stack"
 import type { AuthStackParamList } from "../src/navigation/AuthStack"
 import { auth } from "../firebaseConfig"
 import { signInWithEmailAndPassword } from "firebase/auth"
+// Test Commit
 
 type LoginScreenNavigationProp = NativeStackNavigationProp<AuthStackParamList, "Login">
 
